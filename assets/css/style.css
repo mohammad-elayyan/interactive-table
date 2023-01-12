@@ -88,7 +88,6 @@
 
  #table1 {
      border-spacing: 0;
-
  }
 
  #table1 .tdBorderBottom {
@@ -175,6 +174,16 @@
      .container {
          transform: translate(-50%, -50%) scale(1.5);
      }
+
+     .print {
+         width: 50%;
+     }
+ }
+
+ @media only screen and (min-width:1600px) {
+     .print {
+         width: 50%;
+     }
  }
 
  @media only screen and (max-width:1235px) {
@@ -182,6 +191,7 @@
          transform: translate(-50%, -50%) scale(.95);
      }
  }
+
 
  @media only screen and (max-width:940px) {
      .container {
