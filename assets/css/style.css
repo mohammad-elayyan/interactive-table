@@ -40,10 +40,15 @@
      border: none;
      border-bottom: 1px solid grey;
      overflow: visible;
+     background-color: transparent;
  }
 
-
-
+ .inner-text {
+     font-weight: 600;
+     color: #53555A;
+     min-width: 80px;
+     text-align: right;
+ }
 
  input:focus {
      outline: none;
@@ -92,7 +97,7 @@
 
  #table1 .tdBorderBottom {
      /* border-top: 0.5px solid #bbbdc0; */
-     border-bottom: 0.5px solid #bbbdc0;
+     border-bottom: 0.5px solid #bbbdc0 !important;
  }
 
 
@@ -136,7 +141,8 @@
      display: flex;
      justify-content: flex-start;
      align-items: center;
-     gap: 4px;
+     gap: 10px;
+     margin-bottom: 10px;
  }
 
  .box h4 {
@@ -226,11 +232,12 @@
 
  }
 
- /* @media only screen and (max-width:550px) {
-     .container {
-         transform: translate(-50%, -50%) scale(.8);
+ @media only screen and (max-width:520px) {
+     .inner-text {
+         min-width: 60px;
+         /* text-align: right; */
      }
- } */
+ }
 
  @media only screen and (max-width:500px) {
      .container {

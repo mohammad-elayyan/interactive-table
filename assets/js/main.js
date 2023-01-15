@@ -129,6 +129,7 @@ function removeTdsClass() {
     const tds = tr[i].querySelectorAll("td");
     for (let j = 1; j < tds.length; j++) {
       tds[j].removeAttribute("class");
+      tds[j].setAttribute("class", "tdBorderBottom");
     }
   }
 }
