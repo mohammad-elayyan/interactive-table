@@ -36,7 +36,7 @@
  input[type='text'] {
      font-family: "Din Next LT Regular";
      text-align: center;
-     width: 290px;
+     width: 310px;
      border: none;
      border-bottom: 1px solid grey;
      overflow: visible;
@@ -237,11 +237,19 @@
          min-width: 60px;
          /* text-align: right; */
      }
+
+     input[type='text'] {
+         width: 270px;
+     }
  }
 
  @media only screen and (max-width:500px) {
      .container {
          transform: translate(-49%, -50%) scale(.5);
+     }
+
+     .head {
+         gap: 20px;
      }
  }
 
@@ -253,7 +261,7 @@
 
  @media only screen and (max-width:400px) {
      .container {
-         transform: translate(-47%, -50%) scale(.4);
+         transform: translate(-50%, -50%) scale(.4);
      }
 
      input[type='text'] {
@@ -266,12 +274,20 @@
      }
  }
 
- /* @media only screen and (max-width:350px) {
+ @media only screen and (max-width:320px) {
      .container {
          padding-right: 15px;
-         transform: translate(-50%, -50%) scale(.4);
+         transform: translate(-50%, -50%) scale(.35);
      }
- } */
+
+     .head {
+         gap: 10px;
+     }
+
+     input[type='text'] {
+         width: 240px;
+     }
+ }
 
  .red-style {
      background-color: rgba(237, 28, 36, .3);
